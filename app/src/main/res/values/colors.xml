@@ -1,5 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="ceva_primary">#924800</color>
+    <color name="ceva_on_primary">#FFFFFF</color>
+    <color name="ceva_surface">#FFF8EE</color>
+    <color name="ceva_on_surface">#28190D</color>
+    <color name="ceva_panel">#FFE8BC</color>
+    <color name="ceva_muted">#674E37</color>
+    <color name="ceva_hero">#3B200C</color>
+    <color name="ceva_on_hero">#FFF4DF</color>
+    <color name="ceva_gold">#FFBE55</color>
 </resources>

@@ -1,0 +1,8 @@
+<resources>
+    <color name="ceva_primary">#FFBE70</color>
+    <color name="ceva_on_primary">#492500</color>
+    <color name="ceva_surface">#21170F</color>
+    <color name="ceva_on_surface">#FFEBD6</color>
+    <color name="ceva_panel">#412C19</color>
+    <color name="ceva_muted">#D9BA9C</color>
+</resources>

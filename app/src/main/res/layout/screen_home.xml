@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ceva_hero"
+        android:padding="22dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ceva_gold"
+            android:textStyle="bold"
+            android:letterSpacing="0.07"
+            android:text="@string/home_offer" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:accessibilityHeading="true"
+            android:textColor="@color/ceva_on_hero"
+            android:text="@string/home_hero"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/Ceva.Heading" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/ceva_on_hero"
+            android:text="@string/home_intro"
+            android:layout_marginTop="8dp"
+            android:textAppearance="@style/Ceva.Body" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/view_plans"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:minHeight="56dp"
+            android:text="@string/view_plans" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="true"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/Ceva.Heading" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/home_actions"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/Ceva.Body" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/ceva_panel"
+        android:layout_marginTop="18dp"
+        android:padding="16dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/quiz"
+            android:textAppearance="@style/Ceva.Heading" />
+
+        <TextView
+            android:id="@+id/home_quiz_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textAppearance="@style/Ceva.Body" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/open_quiz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="56dp"
+            android:text="@string/open_quiz" />
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/open_subscription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:minHeight="56dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="@string/subscription" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/open_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:minHeight="56dp"
+        style="@style/Widget.Material3.Button.OutlinedButton"
+        android:text="@string/profile" />
+</LinearLayout>
