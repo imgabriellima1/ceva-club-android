@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="true"
+        android:text="@string/quiz"
+        android:textAppearance="@style/Ceva.Heading" />
+
+    <TextView
+        android:id="@+id/quiz_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityLiveRegion="polite"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/Ceva.Body" />
+
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/quiz_progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:max="5" />
+
+    <TextView
+        android:id="@+id/quiz_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:accessibilityHeading="true"
+        android:layout_marginTop="24dp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge" />
+
+    <RadioGroup
+        android:id="@+id/quiz_options"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical">
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/option_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:saveEnabled="false" />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/option_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:saveEnabled="false" />
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/option_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="52dp"
+            android:saveEnabled="false" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/quiz_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:accessibilityLiveRegion="polite"
+        android:text="@string/quiz_required"
+        android:layout_marginTop="8dp"
+        android:textAppearance="@style/Ceva.Body" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/quiz_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="56dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/quiz_previous"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:minHeight="56dp"
+        style="@style/Widget.Material3.Button.TextButton"
+        android:text="@string/previous" />
+</LinearLayout>

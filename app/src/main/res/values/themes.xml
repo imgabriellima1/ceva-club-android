@@ -1,9 +1,20 @@
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.CevaClub" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+<resources>
+    <style name="Theme.CevaClub" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/ceva_primary</item>
+        <item name="colorOnPrimary">@color/ceva_on_primary</item>
+        <item name="colorSurface">@color/ceva_surface</item>
+        <item name="colorOnSurface">@color/ceva_on_surface</item>
+        <item name="android:colorBackground">@color/ceva_surface</item>
+        <item name="android:windowBackground">@color/ceva_surface</item>
     </style>
 
-    <style name="Theme.CevaClub" parent="Base.Theme.CevaClub" />
+    <style name="Ceva.Heading" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:fontFamily">serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/ceva_on_surface</item>
+    </style>
+
+    <style name="Ceva.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/ceva_muted</item>
+    </style>
 </resources>
